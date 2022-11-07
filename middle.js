@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const middle = function(array) {
   let array_result = []; //Initialize it to empty array
   if (array.length <= 2 && array.length > 0) {
@@ -10,3 +12,5 @@ const middle = function(array) {
 };
 
 console.log(middle)
+
+module.exports = assertEqual;
