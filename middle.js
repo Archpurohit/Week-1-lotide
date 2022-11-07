@@ -1,7 +1,7 @@
 const assertEqual = require('./assertEqual');
 
 const middle = function(array) {
-  let array_result = []; //Initialize it to empty array
+  let array_result = []; 
   if (array.length <= 2 && array.length > 0) {
     return array_result;
   } else if (array.length % 2 === 0) {
