@@ -13,10 +13,10 @@ const eqArrays = function(arr1,arr2) {
 const assertArraysEqual = function(arr1,arr2){
   const result = eqArrays(arr1,arr2)
     if (!result){
-        console.log(" These arrays are NOT equal")
+        console.log("Arrays are NOT equal")
     }
     else {
-        console.log("These arrays ARE equal")
+        console.log("Arrays ARE equal")
     }
 }
 const words = ["ground", "control", "to", "major", "tom"];
