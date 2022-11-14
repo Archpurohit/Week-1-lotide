@@ -35,10 +35,9 @@ assertArraysEqual(without([1,2,3], [1]), [2,3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 const words = ["hello", "world", "lighthouse"];
-without(["hello", "world", "lighthouse"], ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
+without(["hello", "world", "lighthouse"], ["lighthouse"]); 
+// Make sure the original array was not altered
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
-// assertArraysEqual([1,2,3,4],[1,2,3,4]);
-// assertArraysEqual([4,3,2,1],[1,2,3,4]);
+module.export = without;
 
