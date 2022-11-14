@@ -32,3 +32,4 @@ assertEqual(result1["Archit"], 1);
 assertEqual(result1["Purohit"], undefined);
 assertEqual(result1["Santi"], 2);
 
+module.exports = countOnly;
