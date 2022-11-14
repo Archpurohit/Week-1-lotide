@@ -5,11 +5,12 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
+// tell the code to compare arrays 
 const eqArrays = function(array, array2) {
   if (array.length !== array2.length) {
     return false;
   }
+  // ittirate through the array and find which arrays are not the same
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i]) && (eqArrays(array[i], array2[i]) === false)) {
       return false;
@@ -45,3 +46,6 @@ eqObjects(cd, dc); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 eqObjects(cd, cd2); // => false
+
+
+module.exports = eqObjects;
