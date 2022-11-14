@@ -24,3 +24,5 @@ module.exports = {
   eqObjects,
   findKey,
 };
+
+module.exports = index.js
