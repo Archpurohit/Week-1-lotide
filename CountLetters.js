@@ -1,3 +1,4 @@
+const assertEqual = require('./assertEqual'); 
 const countLetters = function(sentence) {
 let numberedLetters = [];
 let string = sentence.split(" ").join("");
