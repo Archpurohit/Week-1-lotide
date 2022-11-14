@@ -13,4 +13,4 @@ const middle = function(array) {
 
 console.log(middle)
 
-module.exports = assertEqual;
+module.exports = middle;
